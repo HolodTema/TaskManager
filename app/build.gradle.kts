@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -50,6 +51,13 @@ android {
 }
 
 dependencies {
+    //dagger2
+    implementation(libs.google.dagger)
+    ksp(libs.google.dagger.compiler)
+
+    //room
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

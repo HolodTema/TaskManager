@@ -1,4 +1,4 @@
-package com.terabyte.taskmanager
+package com.terabyte.taskmanager.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
